@@ -1,0 +1,44 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "blobmod:item/hakai",
+		"particle": "blobmod:item/hakai"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"south": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3, 2]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 3, 2]
+		},
+		"firstperson_righthand": {
+			"translation": [-0.5, 3.75, 1.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [-0.5, 3.75, 1.75]
+		},
+		"ground": {
+			"translation": [0, 4.5, 0]
+		},
+		"gui": {
+			"translation": [0, 5, 0]
+		},
+		"fixed": {
+			"translation": [0, 5.25, 0]
+		}
+	}
+}

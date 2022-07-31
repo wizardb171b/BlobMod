@@ -1,0 +1,1 @@
+function blobmod:heroes_relics
