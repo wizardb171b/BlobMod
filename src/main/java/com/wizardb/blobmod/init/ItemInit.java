@@ -2,9 +2,12 @@ package com.wizardb.blobmod.init;
 
 import com.wizardb.blobmod.BlobMod;
 import com.wizardb.blobmod.item.*;
-import net.minecraft.world.item.AxeItem;
+import com.wizardb.blobmod.item.heroesrelic.Areadbhar;
+import com.wizardb.blobmod.item.heroesrelic.Aymr;
+import com.wizardb.blobmod.item.heroesrelic.Failnaught;
+import com.wizardb.blobmod.item.heroesrelic.SwordOfTheCreator;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -40,6 +43,10 @@ public class ItemInit {
     public static final RegistryObject<Item> Aymr = register ("aymr",
             () -> new Aymr(NETHERITE, 10, -3, new Item.Properties().tab(BlobMod.blobmodtab)
                     .fireResistant().durability(5000)));
+
+    public static final RegistryObject<Item> Failnaught = register ("failnaught",
+            () -> new Failnaught(new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
     //items go up here
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

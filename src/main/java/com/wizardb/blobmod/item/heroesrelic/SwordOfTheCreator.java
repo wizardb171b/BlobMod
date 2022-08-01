@@ -1,4 +1,4 @@
-package com.wizardb.blobmod.item;
+package com.wizardb.blobmod.item.heroesrelic;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;

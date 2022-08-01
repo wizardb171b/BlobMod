@@ -1,0 +1,6 @@
+{
+    "parent": "blobmod:item/failnaught",
+    "textures": {
+        "layer0": "blobmod:item/failnaught_pulling_0"
+    }
+}
