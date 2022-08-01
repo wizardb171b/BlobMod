@@ -2,23 +2,23 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"6": "./_lance_of_ruin",
-		"particle": "./_lance_of_ruin"
+		"5": "blobmod:item/luin",
+		"particle": "blobmod:item/luin"
 	},
 	"elements": [
 		{
 			"from": [-16, 0.5, 0],
 			"to": [16, 0.6, 32],
 			"faces": {
-				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#6"},
-				"down": {"uv": [16, 16, 0, 0], "rotation": 90, "texture": "#6"}
+				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#5"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#5"}
 			}
 		}
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-132.24, 10.51, 79.14],
-			"translation": [-7, -8.25, -0.75]
+			"rotation": [-131.2, 10.69, 77.63],
+			"translation": [-7, -8.25, -1.25]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [-24.14, -81.33, -8.61],
@@ -40,7 +40,7 @@
 		"gui": {
 			"rotation": [-102.88, 3.48, -177.37],
 			"translation": [-3.5, -2.25, 0],
-			"scale": [0.47266, 1, 0.53711]
+			"scale": [0.47852, 1, 0.53711]
 		},
 		"head": {
 			"rotation": [-107.53, 75.63, 33.66],

@@ -2,10 +2,7 @@ package com.wizardb.blobmod.init;
 
 import com.wizardb.blobmod.BlobMod;
 import com.wizardb.blobmod.item.*;
-import com.wizardb.blobmod.item.heroesrelic.Areadbhar;
-import com.wizardb.blobmod.item.heroesrelic.Aymr;
-import com.wizardb.blobmod.item.heroesrelic.Failnaught;
-import com.wizardb.blobmod.item.heroesrelic.SwordOfTheCreator;
+import com.wizardb.blobmod.item.heroesrelic.*;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -46,6 +43,18 @@ public class ItemInit {
 
     public static final RegistryObject<Item> Failnaught = register ("failnaught",
             () -> new Failnaught(new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
+
+    public static final RegistryObject<Item> Luin = register ("luin",
+            () -> new Luin(WOOD, 11, -2.6F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
+
+    public static final RegistryObject<Item> Lance_of_Ruin = register ("lance_of_ruin",
+            () -> new LanceOfRuin(WOOD, 11, -2.6F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
+
+    public static final RegistryObject<Item> Vajra_Mushti = register ("vajra_mushti",
+            () -> new VajraMushti(WOOD,7,0F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
                     .durability(5000)));
     //items go up here
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
