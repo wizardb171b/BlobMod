@@ -8,4 +8,3 @@ execute as @s[scores={ruinedskyuse=6..}] run function blobmod:ruinedsactivate
 scoreboard players add @s[scores={ruinedskyuse=6..}] ruinedskySdelay 300
 scoreboard players set @s[scores={ruinedskyuse=6..}] ruinedskyuse1 0
 scoreboard players set @s[scores={ruinedskyuse=6..}] ruinedskyuse 0
-tag @s remove RuinedS

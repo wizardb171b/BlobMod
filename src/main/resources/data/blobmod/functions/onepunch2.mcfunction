@@ -19,5 +19,4 @@ title @s actionbar "Eviserate"
 playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 100 0
 playsound minecraft:entity.player.attack.crit master @a ~ ~1 ~ 100 0
 playsound minecraft:entity.player.attack.crit master @a ~ ~2 ~ 100 0
-tag @s remove onepunch
 scoreboard players set @s onepunchdelay 600

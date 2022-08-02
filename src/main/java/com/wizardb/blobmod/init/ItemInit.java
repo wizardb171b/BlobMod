@@ -56,6 +56,10 @@ public class ItemInit {
     public static final RegistryObject<Item> Vajra_Mushti = register ("vajra_mushti",
             () -> new VajraMushti(WOOD,7,0F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
                     .durability(5000)));
+
+    public static final RegistryObject<Item> Thunderbrand = register ("thunderbrand",
+            () -> new Thunderbrand(NETHERITE,5,-2.4F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
     //items go up here
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

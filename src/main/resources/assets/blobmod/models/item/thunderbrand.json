@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"4": "./_thunderbrand",
-		"particle": "./sword_of_the_creator"
+		"4": "blobmod:item/thunderbrand",
+		"particle": "blobmod:item/thunderbrand"
 	},
 	"elements": [
 		{

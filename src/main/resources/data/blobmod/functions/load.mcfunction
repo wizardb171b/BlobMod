@@ -11,3 +11,7 @@ scoreboard objectives add ruinedskyuse dummy
 scoreboard objectives add ruinedskySdelayS dummy
 scoreboard objectives add ruinedskyuse1 dummy
 scoreboard objectives add ruinedskyuse2 dummy
+scoreboard objectives add thunderrushdelay dummy
+scoreboard objectives add thunderrushtime dummy
+scoreboard objectives add thunderrushdelayS dummy
+scoreboard objectives add thunderrushhit dummy

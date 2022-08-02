@@ -15,3 +15,7 @@ scoreboard players add @a[scores={ruinedskyuse=1..}] ruinedskyuse1 1
 scoreboard players set @a[scores={ruinedskyuse1=100..}] ruinedskyuse 0
 scoreboard players set @a[scores={ruinedskyuse1=100..}] ruinedskyuse1 0
 scoreboard players remove @a[scores={ruinedskySdelay=1..}] ruinedskySdelay 1
+#thunder rush
+execute as @a[tag=thunderrush] run function blobmod:thunderrushsetup
+execute as @e[scores={thunderrushhit=1..}] at @s run function blobmod:thunderrushafter
+scoreboard players remove @a[scores={thunderrushdelay=1..}] thunderrushdelay 1
