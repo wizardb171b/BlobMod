@@ -1,0 +1,1 @@
+execute as @a[scores={thunderrushtime=1..}] run function blobmod:thunderrush1

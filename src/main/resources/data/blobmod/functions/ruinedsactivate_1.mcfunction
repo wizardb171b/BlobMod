@@ -1,0 +1,1 @@
+execute as @a[scores={ruinedskyuse2=1..}] run function blobmod:ruinedsactivate
