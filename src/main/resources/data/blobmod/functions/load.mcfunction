@@ -10,3 +10,4 @@ scoreboard objectives add ruinedskySdelay dummy
 scoreboard objectives add ruinedskyuse dummy
 scoreboard objectives add ruinedskySdelayS dummy
 scoreboard objectives add ruinedskyuse1 dummy
+scoreboard objectives add ruinedskyuse2 dummy
