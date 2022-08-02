@@ -1,11 +1,14 @@
 package com.wizardb.blobmod.item.heroesrelic;
 
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.level.Level;
 
 import java.util.Collections;
 
@@ -20,6 +23,14 @@ public class LanceOfRuin extends AxeItem {
         entity.invulnerableTime = 0;
         player.invulnerableTime = 0;
         return super.onLeftClickEntity(stack, player, entity);
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        if (hand.equals(InteractionHand.MAIN_HAND)) {
+            player.addTag("RuinedS");
+        }
+        return super.use(level, player, hand);
     }
     //properties up here
 }
