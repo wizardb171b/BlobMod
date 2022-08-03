@@ -17,9 +17,10 @@ public class Luin extends AxeItem {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
+        entity.setTicksFrozen(500);
+        entity.setIsInPowderSnow(true);
         if (player.getAttackStrengthScale(1F) > 0.8) {
             entity.setTicksFrozen(1000);
-            entity.setIsInPowderSnow(true);
         }
         return super.onLeftClickEntity(stack, player, entity);
     }

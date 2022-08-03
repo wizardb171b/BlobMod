@@ -1,0 +1,15 @@
+effect give @s[type=!#skeletons,type=!zombie,type=!zombie_villager,type=!phantom,type=!drowned,type=!husk,type=!skeleton_horse,type=!wither,type=!zombie_horse,type=!zombified_piglin,type=!zoglin] instant_damage 1 0
+effect give @s[type=minecraft:phantom] instant_health 1 0
+effect give @s[type=minecraft:zombie_villager] instant_health 1 0
+effect give @s[type=minecraft:zombified_piglin] instant_health 1 0
+effect give @s[type=minecraft:zombie_horse] instant_health 1 0
+effect give @s[type=minecraft:zombie] instant_health 1 0
+effect give @s[type=minecraft:zoglin] instant_health 1 0
+effect give @s[type=minecraft:wither] instant_health 1 0
+effect give @s[type=minecraft:stray] instant_health 1 0
+effect give @s[type=minecraft:skeleton_horse] instant_health 1 0
+effect give @s[type=minecraft:skeleton] instant_health 1 0
+effect give @s[type=minecraft:husk] instant_health 1 0
+effect give @s[type=minecraft:giant] instant_health 1 0
+effect give @s[type=minecraft:drowned] instant_health 1 0
+effect give @s[type=#minecraft:skeletons] instant_health 1 0

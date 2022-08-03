@@ -1,3 +1,6 @@
 {
-  "custom.glass_break": { "category": "master", "sounds": [ "blobmod:custom/glass_break" ] }
+  "custom.glass_break": { "category": "master", "sounds": [ "blobmod:custom/glass_break" ] },
+  "custom.fire_breath": { "category": "master", "sounds": [ "blobmod:custom/fire_breath" ] },
+  "custom.punch": { "category": "master", "sounds": [ "blobmod:custom/punch" ] },
+  "custom.punch1": { "category": "master", "sounds": [ "blobmod:custom/punch1" ] }
 }

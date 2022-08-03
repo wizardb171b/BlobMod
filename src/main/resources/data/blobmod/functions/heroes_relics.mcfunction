@@ -16,6 +16,16 @@ scoreboard players set @a[scores={ruinedskyuse1=100..}] ruinedskyuse 0
 scoreboard players set @a[scores={ruinedskyuse1=100..}] ruinedskyuse1 0
 scoreboard players remove @a[scores={ruinedskySdelay=1..}] ruinedskySdelay 1
 #thunder rush
-execute as @a[tag=thunderrush] run function blobmod:thunderrushsetup
+execute as @a[tag=thunderrush] at @s run function blobmod:thunderrushsetup
 execute as @e[scores={thunderrushhit=1..}] at @s run function blobmod:thunderrushafter
 scoreboard players remove @a[scores={thunderrushdelay=1..}] thunderrushdelay 1
+#burning quake
+execute as @a[tag=BQu] run function blobmod:burningquakesetup
+scoreboard players remove @a[scores={burningquakedelay=1..}] burningquakedelay 1
+#apocalyptic flames
+execute as @a[tag=AFl] run function blobmod:apocalypticflamessetup
+execute as @e[scores={apocalypticflameshit=1..}] run function blobmod:apocalypticflameshit
+scoreboard players remove @a[scores={apocalypticflamesdelay=1..}] apocalypticflamesdelay 1
+#atrocity
+execute as @a[tag=ATRO] at @s run function blobmod:atrocitysetup
+scoreboard players remove @a[scores={atrocitydelay=1..}] atrocitydelay 1

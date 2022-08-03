@@ -15,3 +15,13 @@ scoreboard objectives add thunderrushdelay dummy
 scoreboard objectives add thunderrushtime dummy
 scoreboard objectives add thunderrushdelayS dummy
 scoreboard objectives add thunderrushhit dummy
+scoreboard objectives add burningquaketime dummy
+scoreboard objectives add burningquakedelayS dummy
+scoreboard objectives add burningquakedelay dummy
+scoreboard objectives add ticksfrozen dummy
+scoreboard objectives add apocalypticflamesdelay dummy
+scoreboard objectives add apocalypticflameshit dummy
+scoreboard objectives add apocalypticflamesdelayS dummy
+scoreboard objectives add atrocitytime dummy
+scoreboard objectives add atrocitydelay dummy
+scoreboard objectives add atrocitydelayS dummy

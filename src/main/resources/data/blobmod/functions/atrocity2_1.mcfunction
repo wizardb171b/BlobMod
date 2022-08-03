@@ -1,0 +1,1 @@
+execute as @a[scores={atrocitytime=1..}] at @s run function blobmod:atrocity2
