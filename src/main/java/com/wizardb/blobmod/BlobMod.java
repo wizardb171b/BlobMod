@@ -3,6 +3,7 @@ package com.wizardb.blobmod;
 import com.wizardb.blobmod.init.BlockInit;
 import com.wizardb.blobmod.init.ItemInit;
 import com.wizardb.blobmod.item.util.ModItemProperties;
+import com.wizardb.blobmod.particle.ModParticles;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,9 +18,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod("blobmod")
 public class BlobMod {
 
-    public static final String Bloopitems = "blobmod";
+    public static final String BLOB_ID = "blobmod";
 
-    public static final CreativeModeTab blobmodtab = new CreativeModeTab(Bloopitems) {
+    public static final CreativeModeTab blobmodtab = new CreativeModeTab(BLOB_ID) {
 
         @Override
         @OnlyIn(Dist.CLIENT)
@@ -30,14 +31,13 @@ public class BlobMod {
     };
 
     public BlobMod() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ItemInit.ITEMS.register(bus);
-        BlockInit.BLOCKS.register(bus);
-        bus.addListener(this::clientSetup);
+        ItemInit.ITEMS.register(eventBus);
+        BlockInit.BLOCKS.register(eventBus);
+        eventBus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(this);
-
-
+        ModParticles.register(eventBus);
     }
     private void clientSetup(final FMLClientSetupEvent event) {
         ModItemProperties.addCustomItemProperties();

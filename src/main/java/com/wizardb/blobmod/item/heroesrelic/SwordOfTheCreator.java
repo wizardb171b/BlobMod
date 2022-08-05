@@ -16,13 +16,17 @@ public class SwordOfTheCreator extends SwordItem {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        entity.setSecondsOnFire(3);
+        if (player.getAttackStrengthScale(1F) > 0.8) {
+            entity.addTag("COF");
+        }
         return super.onLeftClickEntity(stack, player, entity);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level p_41432_, Player player, InteractionHand p_41434_) {
-        player.addTag("SOCTS");
+        if (player.isShiftKeyDown() == false) {
+            player.addTag("SOCTS");
+        }
         return super.use(p_41432_, player, p_41434_);
     }
 }

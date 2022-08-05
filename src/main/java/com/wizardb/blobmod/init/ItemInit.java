@@ -3,7 +3,6 @@ package com.wizardb.blobmod.init;
 import com.wizardb.blobmod.BlobMod;
 import com.wizardb.blobmod.item.*;
 import com.wizardb.blobmod.item.heroesrelic.*;
-import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,7 +13,7 @@ import static net.minecraft.world.item.Tiers.NETHERITE;
 import static net.minecraft.world.item.Tiers.WOOD;
 
 public class ItemInit {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BlobMod.Bloopitems);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BlobMod.BLOB_ID);
     //items go down here
     public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
             () -> new Item(new Item.Properties().tab(BlobMod.blobmodtab).stacksTo(32).fireResistant()));
@@ -54,7 +53,7 @@ public class ItemInit {
                     .durability(5000)));
 
     public static final RegistryObject<Item> Vajra_Mushti = register ("vajra_mushti",
-            () -> new VajraMushti(WOOD,7,1000F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+            () -> new VajraMushti(WOOD,7,996F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
                     .durability(5000)));
 
     public static final RegistryObject<Item> Thunderbrand = register ("thunderbrand",
@@ -63,6 +62,22 @@ public class ItemInit {
 
     public static final RegistryObject<Item> Freikugel = register ("freikugel",
             () -> new Freikugel(NETHERITE, 10, -3, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
+                    .durability(5000)));
+
+    public static final RegistryObject<Item> CoolDown = register ("cooldown",
+            () -> new CoolDown(new Item.Properties().tab(BlobMod.blobmodtab).fireResistant().stacksTo(1)));
+
+    public static final RegistryObject<Item> Coin = register ("coin",
+            () -> new Item(new Item.Properties().tab(BlobMod.blobmodtab)));
+
+    public static final RegistryObject<Item> LowHp = register ("lowhp",
+            () -> new LowHp(new Item.Properties().tab(BlobMod.blobmodtab).stacksTo(1)));
+
+    public static final RegistryObject<Item> FullHp = register ("fullhp",
+            () -> new FullHp(new Item.Properties().tab(BlobMod.blobmodtab).stacksTo(1)));
+
+    public static final RegistryObject<Item> Blutgang = register ("blutgang",
+            () -> new Blutgang(NETHERITE, 5, -2.4F, new Item.Properties().tab(BlobMod.blobmodtab).fireResistant()
                     .durability(5000)));
     //items go up here
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {

@@ -23,8 +23,14 @@ public class Aymr extends AxeItem {
             if (player.getAbsorptionAmount() < 1) {
                 player.setAbsorptionAmount(1);
             }
-            entity.setSecondsOnFire(15);
+            entity.addTag("COF");
         }
         return super.onLeftClickEntity(stack, player, entity);
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        player.addTag("RSt");
+        return super.use(level, player, hand);
     }
 }

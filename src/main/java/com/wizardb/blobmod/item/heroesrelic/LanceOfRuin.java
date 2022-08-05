@@ -28,7 +28,9 @@ public class LanceOfRuin extends AxeItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if (hand.equals(InteractionHand.MAIN_HAND)) {
-            player.addTag("RuinedS");
+            if (player.isShiftKeyDown() == false) {
+                player.addTag("RuinedS");
+            }
         }
         return super.use(level, player, hand);
     }

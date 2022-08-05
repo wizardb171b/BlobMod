@@ -16,7 +16,6 @@ execute positioned ^ ^ ^9 run function blobmod:onepunch1
 execute positioned ^ ^ ^9.5 run function blobmod:onepunch1
 execute positioned ^ ^ ^10 run function blobmod:onepunch1
 title @s actionbar "Eviserate"
-playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 100 0
-playsound minecraft:entity.player.attack.crit master @a ~ ~1 ~ 100 0
-playsound minecraft:entity.player.attack.crit master @a ~ ~2 ~ 100 0
-scoreboard players set @s onepunchdelay 400
+playsound minecraft:entity.player.attack.crit master @a ^ ^ ^2 1 0.8
+playsound minecraft:entity.player.attack.crit master @a ^ ^1 ^2 1 0.8
+scoreboard players set @s onepunchdelay 300

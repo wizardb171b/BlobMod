@@ -13,5 +13,10 @@
   "item.blobmod.lance_of_ruin": "Lance of Ruin",
   "item.blobmod.vajra_mushti": "Vajra Mushti",
   "item.blobmod.thunderbrand": "Thunderbrand",
-  "item.blobmod.freikugel": "Freikugel"
+  "item.blobmod.freikugel": "Freikugel",
+  "item.blobmod.cooldown": "CoolDown",
+  "item.blobmod.coin": "Coin",
+  "item.blobmod.lowhp": "LowHp",
+  "item.blobmod.fullhp": "FullHp",
+  "item.blobmod.blutgang": "Blutgang"
 }

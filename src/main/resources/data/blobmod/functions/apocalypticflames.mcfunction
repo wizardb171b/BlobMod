@@ -1,4 +1,4 @@
-execute as @e[distance=0..5,type=!player] run scoreboard players set @s apocalypticflameshit 60
+execute as @e[distance=0..5,type=!player] run scoreboard players set @s apocalypticflameshit 26
 #1 horizontal
 particle minecraft:flame ~ ~ ~
 particle minecraft:flame ~ ~ ~1
@@ -172,5 +172,5 @@ particle minecraft:flame ~-3 ~3 ~-3
 particle minecraft:flame ~-4 ~3 ~-4
 particle minecraft:flame ~-5 ~3 ~-5
 playsound blobmod:custom.fire_breath master @a ~ ~ ~ 10 1.5
-title @s actionbar "Apocalyptic Flames"
+title @s actionbar [{"color": "red","text": "Apocalyptic Flames"}]
 scoreboard players set @s apocalypticflamesdelay 600

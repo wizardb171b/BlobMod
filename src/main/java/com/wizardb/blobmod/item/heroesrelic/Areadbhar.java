@@ -23,7 +23,11 @@ public class Areadbhar extends AxeItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        player.addTag("ATRO");
+        if (hand.equals(InteractionHand.MAIN_HAND)) {
+            if (player.isShiftKeyDown() == false) {
+                player.addTag("ATRO");
+            }
+        }
         return super.use(level, player, hand);
     }
 }

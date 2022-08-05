@@ -17,7 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Function;
 
 public class BlockInit {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BlobMod.Bloopitems);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BlobMod.BLOB_ID);
 
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
     //blocks go down here

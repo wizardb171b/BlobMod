@@ -1,2 +1,2 @@
-particle explosion ~ ~ ~ 0 0 0 0 1
+particle explosion ~ ~ ~
 execute as @e[type=!player,distance=0..5] run function blobmod:damage_2

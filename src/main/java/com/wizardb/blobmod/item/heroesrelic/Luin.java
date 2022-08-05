@@ -17,17 +17,19 @@ public class Luin extends AxeItem {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        entity.setTicksFrozen(500);
-        entity.setIsInPowderSnow(true);
         if (player.getAttackStrengthScale(1F) > 0.8) {
-            entity.setTicksFrozen(1000);
+            entity.addTag("luinsnow");
         }
         return super.onLeftClickEntity(stack, player, entity);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        player.addTag("BQu");
+        if (hand.equals(InteractionHand.MAIN_HAND)) {
+            if (player.isShiftKeyDown() == false) {
+                player.addTag("BQu");
+            }
+        }
         return super.use(level, player, hand);
     }
     //properties up here

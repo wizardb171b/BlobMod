@@ -1,8 +1,11 @@
 tellraw @a "blobmod datapack has been reloaded"
+scoreboard objectives add Health health
+scoreboard objectives setdisplay list Health
 scoreboard objectives add areadbharlightningdelay dummy
 scoreboard objectives add soctimestop dummy
 scoreboard objectives add soctimestopdelay dummy
 scoreboard objectives add soctimestopdelayS dummy
+scoreboard objectives add soctime dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add onepunchdelay dummy
 scoreboard objectives add onepunchdelayS dummy
@@ -25,3 +28,14 @@ scoreboard objectives add apocalypticflamesdelayS dummy
 scoreboard objectives add atrocitytime dummy
 scoreboard objectives add atrocitydelay dummy
 scoreboard objectives add atrocitydelayS dummy
+scoreboard objectives add coins dummy
+scoreboard objectives add beastfangdelay dummy
+scoreboard objectives add beastfangdelayS dummy
+scoreboard objectives add motion_x2 dummy
+scoreboard objectives add motion_y2 dummy
+scoreboard objectives add motion_z2 dummy
+scoreboard objectives add motion_x1 dummy
+scoreboard objectives add motion_y1 dummy
+scoreboard objectives add motion_z1 dummy
+scoreboard objectives add beastfanghit dummy
+scoreboard objectives add luineffect dummy

@@ -17,7 +17,9 @@ public class VajraMushti extends ShovelItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        player.addTag("onepunch");
+        if (player.isShiftKeyDown() == false) {
+            player.addTag("onepunch");
+        }
         return super.use(level, player, hand);
     }
 

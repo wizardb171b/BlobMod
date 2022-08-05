@@ -1,0 +1,1 @@
+execute as @a[scores={soctime=1..}] run function blobmod:soccancel

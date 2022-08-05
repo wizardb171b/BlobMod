@@ -82,9 +82,9 @@ particle minecraft:flame ~7 ~ ~-7
 particle minecraft:flame ~8 ~ ~-8 
 particle minecraft:flame ~9 ~ ~-9 
 particle minecraft:flame ~10 ~ ~-10
-scoreboard players set @s burningquakedelay 600
+scoreboard players set @s burningquakedelay 900
 playsound minecraft:entity.minecart.riding master @a ~ ~ ~ 1 0
 playsound minecraft:entity.minecart.riding master @a ~ ~1 ~ 1 0
 playsound minecraft:entity.lightning_bolt.impact master @a ~ ~ ~ 1 0
 playsound minecraft:entity.lightning_bolt.impact master @a ~ ~1 ~ 1 0
-title @s actionbar "Burning Quake"
+title @s actionbar [{"color": "dark_red","text": "Burning Quake"}]

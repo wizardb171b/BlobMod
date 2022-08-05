@@ -16,7 +16,9 @@ public class Freikugel extends AxeItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        player.addTag("AFl");
+        if (player.isShiftKeyDown() == false) {
+            player.addTag("AFl");
+        }
         return super.use(level, player, hand);
     }
 

@@ -2,5 +2,14 @@
   "custom.glass_break": { "category": "master", "sounds": [ "blobmod:custom/glass_break" ] },
   "custom.fire_breath": { "category": "master", "sounds": [ "blobmod:custom/fire_breath" ] },
   "custom.punch": { "category": "master", "sounds": [ "blobmod:custom/punch" ] },
-  "custom.punch1": { "category": "master", "sounds": [ "blobmod:custom/punch1" ] }
+  "custom.punch1": { "category": "master", "sounds": [ "blobmod:custom/punch1" ] },
+  "custom.sword_sheath": { "category": "master", "sounds": [ "blobmod:custom/sword_sheath" ] },
+  "custom.2s_delay_glass_break": { "category": "master", "sounds": [ "blobmod:custom/2s_delay_glass_break" ] },
+  "custom.1s_delay_glass_break": { "category": "master", "sounds": [ "blobmod:custom/1s_delay_glass_break" ] },
+  "custom.0.5s_delay_glass_break": { "category": "master", "sounds": [ "blobmod:custom/0.5s_delay_glass_break" ] },
+  "custom.glass_shatter": { "category": "master", "sounds": [ "blobmod:custom/glass_shatter" ] },
+  "custom.2s_delay_glass_shatter": { "category": "master", "sounds": [ "blobmod:custom/2s_delay_glass_shatter" ] },
+  "custom.1s_delay_glass_shatter": { "category": "master", "sounds": [ "blobmod:custom/1s_delay_glass_shatter" ] },
+  "custom.0.5s_delay_glass_shatter": { "category": "master", "sounds": [ "blobmod:custom/0.5s_delay_glass_shatter" ] },
+  "custom.coins": { "category": "master", "sounds": [ "blobmod:custom/coins" ] }
 }
