@@ -17,7 +17,7 @@ public class FallenStarParticle extends TextureSheetParticle {
         this.zd = zd;
         //size
         this.quadSize = 2.0F;
-        this.lifetime = 100;
+        this.lifetime = 200;
         //important to not crash
         this.setSpriteFromAge(spriteSet);
         //colors (rgb)

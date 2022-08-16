@@ -7,4 +7,5 @@ scoreboard players set @s ruinedskySdelay 0
 scoreboard players set @s thunderrushdelay 0
 scoreboard players set @s beastfangdelay 0
 scoreboard players set @s ragingstormdelay 0
+scoreboard players set @s fallenstardelay 0
 tag @s remove removecd

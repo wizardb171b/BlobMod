@@ -43,3 +43,5 @@ execute as @e[scores={stun=1..}] at @s run function blobmod:stun
 execute as @a[tag=RSt] at @s anchored eyes run function blobmod:ragingstormsetup
 scoreboard players remove @a[scores={ragingstormdelay=1..}] ragingstormdelay 1
 #fallen star
+execute as @a[tag=FSt] at @s anchored eyes run function blobmod:fallenstarsetup
+scoreboard players remove @a[scores={fallenstardelay=1..}] fallenstardelay 1
