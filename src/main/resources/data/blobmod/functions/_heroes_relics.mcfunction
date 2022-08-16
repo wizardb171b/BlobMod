@@ -37,3 +37,9 @@ execute as @e[scores={beastfanghit=1..}] run function blobmod:beastfanghit
 scoreboard players remove @a[scores={beastfangdelay=1..}] beastfangdelay 1
 #luin effect
 execute as @e[tag=luinsnow] at @s run function blobmod:luineffect
+#stun
+execute as @e[scores={stun=1..}] at @s run function blobmod:stun
+#ragingstorm
+execute as @a[tag=RSt] at @s anchored eyes run function blobmod:ragingstormsetup
+scoreboard players remove @a[scores={ragingstormdelay=1..}] ragingstormdelay 1
+#fallen star

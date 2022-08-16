@@ -17,12 +17,6 @@ public class Aymr extends AxeItem {
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if (player.getAttackStrengthScale(1F) > 0.8) {
-            if (player.getHealth() < 15) {
-                player.heal(0.5F);
-            }
-            if (player.getAbsorptionAmount() < 1) {
-                player.setAbsorptionAmount(1);
-            }
             entity.addTag("COF");
         }
         return super.onLeftClickEntity(stack, player, entity);

@@ -1,6 +1,54 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "blobmod:item/blutgang"
-  }
+	"credit": "Made with Blockbench",
+	"texture_size": [256, 256],
+	"textures": {
+		"0": "blobmod:item/blutgang",
+		"particle": "blobmod:item/blutgang"
+	},
+	"elements": [
+		{
+			"from": [-9, 0.5, 0],
+			"to": [16, 0.6, 25],
+			"faces": {
+				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-34.38, -4.88, -91.59],
+			"translation": [7.5, 1.75, 1.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-34.4, 0.58, 88.44],
+			"translation": [-7.25, 1.75, 1.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [-45.35, -4.25, -109.04],
+			"translation": [8.75, -1.25, -0.5],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-43.07, -12.88, 79.57],
+			"translation": [-1.75, 0, -3.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"rotation": [-89.47, 0.14, -170.5],
+			"translation": [-2.25, -3.25, 0],
+			"scale": [0.69578, 0.8, 0.71797]
+		},
+		"head": {
+			"rotation": [-89.5, 0, 0],
+			"translation": [3.5, -21.5, -2.75]
+		},
+		"fixed": {
+			"rotation": [-87.5, 0, 0],
+			"translation": [4.5, -4, -9.25]
+		}
+	}
 }

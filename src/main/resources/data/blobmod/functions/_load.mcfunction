@@ -39,3 +39,9 @@ scoreboard objectives add motion_y1 dummy
 scoreboard objectives add motion_z1 dummy
 scoreboard objectives add beastfanghit dummy
 scoreboard objectives add luineffect dummy
+scoreboard objectives add ragingstormdelay dummy
+scoreboard objectives add ragingstormdelayS dummy
+scoreboard objectives add stun dummy
+scoreboard objectives add fallenstar dummy
+scoreboard objectives add fallenstardelay dummy
+scoreboard objectives add fallenstardelayS dummy
