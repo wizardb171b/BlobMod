@@ -45,4 +45,3 @@ execute as @a[tag=FSt] at @s anchored eyes run function blobmod:fallenstarsetup
 scoreboard players remove @a[scores={fallenstardelay=1..}] fallenstardelay 1
 #wind arrow
 execute as @e[type=arrow,tag=WiA] at @s run function blobmod:wia
-execute as @e[tag=FNW] run function blobmod:fnw
