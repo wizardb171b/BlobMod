@@ -15,18 +15,12 @@ public class Failnaught extends BowItem {
         super(p_40660_);
     }
     //properties down here
-
-    @Override
-    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        entity.addTag("FNW");
-        return super.onLeftClickEntity(stack, player, entity);
-    }
-
     @Override
     public AbstractArrow customArrow(AbstractArrow arrow) {
         arrow.setBaseDamage(3);
         arrow.setPierceLevel((byte) 10);
         arrow.setKnockback(2);
+        arrow.addTag("WiA");
         return super.customArrow(arrow);
     }
 

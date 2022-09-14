@@ -6,18 +6,18 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class FallenStarParticle extends TextureSheetParticle {
-    protected FallenStarParticle(ClientLevel Level, double xCoord, double yCoord, double zCoord,
-                                 SpriteSet spriteSet, double xd, double yd, double zd) {
+public class WindTornado extends TextureSheetParticle {
+    protected WindTornado(ClientLevel Level, double xCoord, double yCoord, double zCoord,
+                          SpriteSet spriteSet, double xd, double yd, double zd) {
         super(Level, xCoord, yCoord, zCoord, xd, yd, zd);
         this.friction = 0.8F;
         //velocity
         this.xd = xd;
-        this.yd = yd;
+        this.yd = yd + 1;
         this.zd = zd;
         //size
-        this.quadSize = 2.0F;
-        this.lifetime = 220;
+        this.quadSize *= 20F;
+        this.lifetime = 40;
         //important to not crash
         this.setSpriteFromAge(spriteSet);
         //colors (rgb)
@@ -51,7 +51,7 @@ public class FallenStarParticle extends TextureSheetParticle {
         public Particle createParticle(SimpleParticleType particleType, ClientLevel level,
                                        double x, double y, double z,
                                        double dx, double dy, double dz) {
-            return new FallenStarParticle(level, x, y, z, this.sprites, dz, dy, dz);
+            return new WindTornado(level, x, y, z, this.sprites, dz, dy, dz);
         }
     }
 }

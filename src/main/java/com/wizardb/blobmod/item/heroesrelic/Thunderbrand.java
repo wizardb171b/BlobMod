@@ -15,7 +15,7 @@ public class Thunderbrand extends SwordItem {
     //properties down here
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if (player.isShiftKeyDown() == false) {
+        if (player.isShiftKeyDown() == true) {
                 player.addTag("thunderrush");
             }
         return super.use(level, player, hand);

@@ -24,7 +24,7 @@ public class SwordOfTheCreator extends SwordItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level p_41432_, Player player, InteractionHand p_41434_) {
-        if (player.isShiftKeyDown() == false) {
+        if (player.isShiftKeyDown() == true) {
             player.addTag("SOCTS");
         }
         return super.use(p_41432_, player, p_41434_);

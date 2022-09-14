@@ -4,8 +4,6 @@ execute as @e[tag=ArL] run function blobmod:arl
 execute as @a[tag=SOCTS] at @s run function blobmod:soc
 execute as @e[scores={soctimestop=1..}] run function blobmod:socafter
 scoreboard players remove @a[scores={soctimestopdelay=1..}] soctimestopdelay 1
-#failnaught
-execute as @e[tag=FNW] run function blobmod:fnw
 #onepunch
 execute as @a[tag=onepunch] at @s anchored eyes run function blobmod:onepunch
 scoreboard players remove @a[scores={onepunchdelay=1..}] onepunchdelay 1
@@ -45,3 +43,6 @@ scoreboard players remove @a[scores={ragingstormdelay=1..}] ragingstormdelay 1
 #fallen star
 execute as @a[tag=FSt] at @s anchored eyes run function blobmod:fallenstarsetup
 scoreboard players remove @a[scores={fallenstardelay=1..}] fallenstardelay 1
+#wind arrow
+execute as @e[type=arrow,tag=WiA] at @s run function blobmod:wia
+execute as @e[tag=FNW] run function blobmod:fnw

@@ -24,7 +24,9 @@ public class Aymr extends AxeItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        player.addTag("RSt");
+        if (player.isShiftKeyDown() == true) {
+            player.addTag("RSt");
+        }
         return super.use(level, player, hand);
     }
 }

@@ -82,6 +82,11 @@ particle minecraft:flame ~7 ~ ~-7
 particle minecraft:flame ~8 ~ ~-8 
 particle minecraft:flame ~9 ~ ~-9 
 particle minecraft:flame ~10 ~ ~-10
+#tornados
+particle blobmod:flame_tornado ~-5 ~ ~-5 1 1 1 0.2 10 
+particle blobmod:flame_tornado ~5 ~ ~-5 1 1 1 0.2 10 
+particle blobmod:flame_tornado ~-5 ~ ~5 1 1 1 0.2 10 
+particle blobmod:flame_tornado ~5 ~ ~5 1 1 1 0.2 10
 scoreboard players set @s burningquakedelay 900
 playsound minecraft:entity.minecart.riding master @a ~ ~ ~ 1 0
 playsound minecraft:entity.minecart.riding master @a ~ ~1 ~ 1 0

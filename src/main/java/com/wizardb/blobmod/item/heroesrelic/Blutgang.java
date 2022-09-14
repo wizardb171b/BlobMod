@@ -15,7 +15,7 @@ public class Blutgang extends SwordItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if (player.isShiftKeyDown() == false) {
+        if (player.isShiftKeyDown() == true) {
             player.addTag("BFg");
         }
         return super.use(level, player, hand);

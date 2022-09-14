@@ -55,6 +55,12 @@ public class ModEventBusEvents {
 
         Minecraft.getInstance().particleEngine.register(ModParticles.FALLEN_STAR_PROJECTILE.get(),
                 FallenStarProjectiles.Provider::new);
+
+        Minecraft.getInstance().particleEngine.register(ModParticles.WIND_TORNADO.get(),
+                WindTornado.Provider::new);
+
+        Minecraft.getInstance().particleEngine.register(ModParticles.WIND_PARTICLE.get(),
+                WindParticle.Provider::new);
         //register particles up here
     }
 

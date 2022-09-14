@@ -57,6 +57,12 @@ public class ModParticles {
     public static final RegistryObject<SimpleParticleType> FALLEN_STAR_PROJECTILE =
             PARTICLE_TYPES.register("fallen_star_projectile",
                     () -> new SimpleParticleType(true));
+    public static final RegistryObject<SimpleParticleType> WIND_TORNADO =
+            PARTICLE_TYPES.register("wind_tornado",
+                    () -> new SimpleParticleType(true));
+    public static final RegistryObject<SimpleParticleType> WIND_PARTICLE =
+            PARTICLE_TYPES.register("wind_particle",
+                    () -> new SimpleParticleType(true));
     //particles go up here
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
