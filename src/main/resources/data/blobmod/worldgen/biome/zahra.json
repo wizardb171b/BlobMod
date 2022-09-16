@@ -1,0 +1,54 @@
+{
+    "temperature": 0.8,
+    "downfall": 0,
+    "precipitation": "none",
+    "temperature_modifier": "none",
+    "category": "the_end",
+    "creature_spawn_probability": 1,
+    "effects": {
+      "sky_color": 2232656,
+      "fog_color": 3546207,
+      "water_color": 1845311,
+      "water_fog_color": 328986,
+      "grass_color_modifier": "none",
+      "particle": {
+        "options": {
+          "type": "minecraft:ash"
+        },
+        "probability": 1
+      }
+    },
+    "spawners": {
+      "monster": [
+        {
+          "type": "minecraft:vex",
+          "weight": 1,
+          "minCount": 10,
+          "maxCount": 20
+        },
+        {
+          "type": "minecraft:bat",
+          "weight": 2,
+          "minCount": 20,
+          "maxCount": 40
+        }
+      ]
+    },
+    "spawn_costs": {
+      "minecraft:vex": {
+        "energy_budget": 0.1,
+        "charge": 2
+      },
+      "minecraft:bat": {
+        "energy_budget": 0.05,
+        "charge": 2
+      }
+    },
+    "carvers": {},
+    "features": [
+      [
+        "minecraft:amethyst_geode"
+      ]
+    ]
+  }
+  
