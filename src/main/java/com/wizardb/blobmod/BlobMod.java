@@ -4,6 +4,7 @@ import com.wizardb.blobmod.init.BlockInit;
 import com.wizardb.blobmod.init.ItemInit;
 import com.wizardb.blobmod.item.util.ModItemProperties;
 import com.wizardb.blobmod.particle.ModParticles;
+import com.wizardb.blobmod.world.dimension.ModDimensions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +39,7 @@ public class BlobMod {
         eventBus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(this);
         ModParticles.register(eventBus);
+        ModDimensions.register();
     }
     private void clientSetup(final FMLClientSetupEvent event) {
         ModItemProperties.addCustomItemProperties();

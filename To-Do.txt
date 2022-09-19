@@ -1,2 +1,2 @@
-test dimensions
 add silver tools, weapons + ore and maybe armor
+make a new block for zahra dimension

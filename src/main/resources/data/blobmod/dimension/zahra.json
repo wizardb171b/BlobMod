@@ -1,8 +1,8 @@
 {
-  "type": "blobmod:zahra",
+  "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 84726681,
+    "seed": -229529882,
     "settings": {
       "sea_level": 63,
       "disable_mob_generation": false,
@@ -13,16 +13,16 @@
         "Name": "blobmod:example_block"
       },
       "default_fluid": {
-        "Name": "minecraft:diamond_block",
+        "Name": "minecraft:water",
         "Properties": {
           "level": "0"
         }
       },
       "noise": {
-        "min_y": -64,
-        "height": 384,
+        "min_y": 192,
+        "height": 32,
         "size_horizontal": 1,
-        "size_vertical": 2,
+        "size_vertical": 1,
         "sampling": {
           "xz_scale": 0.9999999814507745,
           "y_scale": 0.9999999814507745,
@@ -50,10 +50,10 @@
         "fluid_level_floodedness": 0,
         "fluid_level_spread": 0,
         "lava": 0,
-        "temperature": 0.1,
-        "vegetation": 0.1,
-        "continents": 0.1,
-        "erosion": 0.1,
+        "temperature": 0,
+        "vegetation": 0,
+        "continents": 0,
+        "erosion": 0,
         "depth": 0,
         "ridges": 0,
         "initial_density_without_jaggedness": 0,
@@ -72,7 +72,7 @@
     },
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "blobmod:zahra"
+      "biome": "minecraft:plains"
     }
   }
 }
