@@ -1,2 +1,5 @@
+**long term: make the dimension have custom structures, ores, strongholds etc.
+**long term (would require all weapons to be finished and for them to be copied with new textures): relics found in chests and can be awakened using crest stones which are crafted/researched?
 add silver tools, weapons + ore and maybe armor
-make a new block for zahra dimension
+add the ore that resides in the zahra dimension
+test new block

@@ -24,6 +24,10 @@ public class BlockInit {
     public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(3.0f).sound(SoundType.METAL).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(BlobMod.blobmodtab)));
+
+    public static final RegistryObject<Block> ZAHRA_BLOCK = register("zahra_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.METAL).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(BlobMod.blobmodtab)));
     //blocks go up here
     private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
         return BLOCKS.register(name, block);

@@ -1,7 +1,6 @@
 {
   "replace": "false",
   "values": [
-    "blobmod:example_block",
     "blobmod:zahra_block"
   ]
 }

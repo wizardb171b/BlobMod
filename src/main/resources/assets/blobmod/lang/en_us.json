@@ -18,5 +18,6 @@
   "item.blobmod.coin": "Coin",
   "item.blobmod.lowhp": "LowHp",
   "item.blobmod.fullhp": "FullHp",
-  "item.blobmod.blutgang": "Blutgang"
+  "item.blobmod.blutgang": "Blutgang",
+  "block.blobmod.zahra_block": "Zahra Block"
 }
